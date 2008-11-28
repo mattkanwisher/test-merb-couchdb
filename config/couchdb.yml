@@ -1,9 +1,9 @@
 :development:
-  :host: localhost
+  :host: 10.201.55.42
   :port: 5984
   :db: articles
   
 :test:
-  :host: localhost
+  :host: 10.201.55.42
   :port: 5984
   :db: mydb_test
