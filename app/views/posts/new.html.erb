@@ -1,0 +1,10 @@
+<h1>Add a new post</h1>
+
+<%= error_messages_for :post %>
+
+<%= form_for @post, :action => url(:posts) do %>
+  <%= partial :form %>
+  <p><%= submit 'Create' %></p>
+<% end =%>
+
+<%= link_to 'Back', url(:posts) %>

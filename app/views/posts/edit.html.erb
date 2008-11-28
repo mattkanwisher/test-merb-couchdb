@@ -1,0 +1,12 @@
+<h1>Edit <% @post.title %></h1>
+
+<%= error_messages_for :post %>
+
+<%= form_for @post, :action => url(:post, @post) do %>
+  <%= partial :form %>
+  <p><%= submit 'Update' %></p>
+<% end =%>
+
+<%= link_to 'Show', url(:post, @post) %>
+ | 
+<%= link_to 'Back', url(:posts) %>

@@ -1,0 +1,14 @@
+<p><%= @post.title %></p>
+<p><%= @post.body %></p>
+
+<br/>
+<hr/>
+<h1>Comments</h1>
+<p><%= partial 'comments/show', :with => @post.comments.reverse, :as => :comment %></p>
+
+<hr/>
+<p><%= partial 'comments/comment' %></p>
+
+<%= link_to 'Edit', url(:edit_post,  @post) %>
+|
+<%= link_to 'Back', url(:posts) %>
